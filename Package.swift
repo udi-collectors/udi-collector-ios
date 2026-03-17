@@ -12,15 +12,20 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "UDICollectorSDK",
-            targets: ["UDICollectorSDK"]
+            targets: ["UDICollectorBinaryRemote"]
         )
     ],
     targets: [
-         .binaryTarget(
-             name: "UDICollectorSDK",
-             url: "https://github.com/udi-collectors/udi-collector-ios/releases/download/1.2.1/ios-collector-ios-lib.zip",
-             checksum: "e653b50e7487fb0459c832235ea9ce23f325fb151ba975e2a1e1416d2059a464"
-         )
+        .binaryTarget(
+            name: "UDICollectorBinaryRemote",
+            url: "https://github.com/udi-collectors/udi-collector-ios/releases/download/1.2.4/udi-collector-ios-xcframework-1.2.4.zip", // Replace with actual URL during build
+            checksum: "5705fe4c985f718505e8f14b1fa8526a6db2876122ad9dae58db30d5ef14762e" // Replace with actual checksum during build
+        )
+        // ,
+        // .binaryTarget(
+        //     name: "UDICollectorBinaryLocal",
+        //     path: "../sc-collector-sdk/target/frameworks/XCFramework/UDICollector.xcframework"
+        // )
     ],
     swiftLanguageModes: [.v5]
 )
