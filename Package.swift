@@ -1,5 +1,4 @@
 // swift-tools-version: 5.10
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -11,12 +10,12 @@ let package = Package(
     products: [
         .library(
             name: "UDICollectorSDK",
-            targets: ["UDICollectorBinaryRemote"]
+            targets: ["udi-collector-ios-xcframework"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "UDICollectorBinaryRemote",
+            name: "udi-collector-ios-xcframework",
             url: "https://github.com/udi-collectors/udi-collector-ios/releases/download/1.2.8/udi-collector-ios-xcframework-1.2.8.zip",
             checksum: "5705fe4c985f718505e8f14b1fa8526a6db2876122ad9dae58db30d5ef14762e"
         )
