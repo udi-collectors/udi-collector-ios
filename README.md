@@ -1,2 +1,2 @@
-# udi-collector-ios
-UDI Collector iOS public repo to be used by external clients.
+# di-collector-ios
+DI Collector iOS public repo to be used by external clients.
