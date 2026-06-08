@@ -18,7 +18,7 @@ let package = Package(
         .binaryTarget(
             name: "UDICollectorSDK",
             url: "https://github.com/udi-collectors/udi-collector-ios/releases/download/9.4.0/udi-collector-ios-xcframework-9.4.0.zip", // Replace with actual URL during build
-            checksum: "e89bf832eccbde2cf9b56ccf595344ab5547cae009caa287b53456e15c022e56" // Replace with actual checksum during 
+            checksum: "e89bf832eccbde2cf9b56ccf595344ab5547cae009caa287b53456e15c022e56" // Replace with actual checksum during build
         )
     ]
 )
